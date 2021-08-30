@@ -1,0 +1,48 @@
+:root {
+  --mobile: 375px;
+  --desktop: 1440px;
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+  --main-font-size: 1.6rem;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  height: 100vh;
+  font-size: var(--main-font-size);
+  background-color: #e6eff6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container {
+  border: 1px solid red;
+  width: var(--mobile);
+  padding: 30px;
+}
+
+.card {
+  border: 1px solid green;
+  width: 310px;
+  height: 725px;
+}
+/*# sourceMappingURL=style.css.map */
