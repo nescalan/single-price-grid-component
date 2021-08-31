@@ -1,6 +1,7 @@
 :root {
   --mobile: 375px;
   --desktop: 1440px;
+  --white: #fff;
   --cyan: hsl(179, 62%, 43%);
   --bright-yellow: hsl(71, 73%, 54%);
   --light-gray: hsl(204, 43%, 93%);
@@ -46,7 +47,7 @@ body {
   border-radius: 10px;
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-color: #fff;
+  background-color: var(--white);
 }
 
 .card-top {
@@ -76,17 +77,70 @@ body {
 
 .card-mid {
   height: 200px;
-  padding: 30px;
-  color: #fff;
-  border: 1px solid green;
+  padding: 20px 30px;
+  color: var(--white);
   background-color: var(--cyan);
+}
+
+.card-mid-title {
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.card-mid-subtitle {
+  color: #6ed5d3;
+  font-size: 1.4rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.card-mid-subtitle .span-1 {
+  color: var(--white);
+  font-size: 2.7rem;
+  font-weight: 700;
+  margin-right: 13px;
+  display: inline-block;
+}
+
+.card-mid-subtitle .span-2 {
+  color: #82e6e6;
+}
+
+.card-mid-text {
+  margin-top: 8px;
+  font-size: 1.4rem;
+}
+
+.card-mid button {
+  width: 100%;
+  height: 40px;
+  margin-top: 23px;
+  font-weight: 700;
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  -webkit-box-shadow: rgba(50, 50, 60, 0.4) 0px 7px 29px 0px;
+          box-shadow: rgba(50, 50, 60, 0.4) 0px 7px 29px 0px;
+  background-color: var(--bright-yellow);
 }
 
 .card-bottom {
   border: 1px solid green;
   height: 200px;
-  padding: 30px;
-  color: #fff;
+  padding: 20px 30px;
+  color: var(--white);
   background-color: #5cbebd;
+}
+
+.card-bottom-title {
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */
