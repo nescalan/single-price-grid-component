@@ -6,6 +6,7 @@
   --light-gray: hsl(204, 43%, 93%);
   --grayish-blue: hsl(218, 22%, 67%);
   --main-font-size: 1.6rem;
+  --karla: "Karla", sans-serif;
 }
 
 * {
@@ -20,8 +21,9 @@ html {
 }
 
 body {
-  height: 100vh;
+  height: 100 vh;
   font-size: var(--main-font-size);
+  font-family: var(--karla);
   background-color: #e6eff6;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -35,14 +37,59 @@ body {
 }
 
 .container {
-  border: 1px solid red;
   width: var(--mobile);
   padding: 30px;
 }
 
 .card {
-  border: 1px solid green;
   width: 310px;
-  height: 725px;
+  height: 723px;
+  padding: 30px 0;
+  border-radius: 10px;
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.card-top {
+  border: 1px solid green;
+  padding: 0 30px;
+  height: 235px;
+}
+
+.card-top-title {
+  border: 1px solid blue;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: var(--cyan);
+  font-size: 1.9rem;
+}
+
+.card-top-subtitle {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--bright-yellow);
+}
+
+.card-top-text {
+  font-size: 1.3rem;
+  color: var(--grayish-blue);
+  line-height: 2.4rem;
+}
+
+.card-mid {
+  height: 200px;
+  padding: 30px;
+  color: #fff;
+  border: 1px solid green;
+  background-color: var(--cyan);
+}
+
+.card-bottom {
+  border: 1px solid green;
+  height: 200px;
+  padding: 30px;
+  color: #fff;
+  background-color: #5cbebd;
 }
 /*# sourceMappingURL=style.css.map */

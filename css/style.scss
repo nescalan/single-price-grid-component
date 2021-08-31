@@ -11,6 +11,7 @@
 
   // Font
   --main-font-size: 1.6rem;
+  --karla: "Karla", sans-serif;
 }
 
 * {
@@ -22,20 +23,59 @@ html {
   font-size: 62.5%;
 }
 body {
-  height: 100vh;
+  height: 100 vh;
   font-size: var(--main-font-size);
+  font-family: var(--karla);
   background-color: #e6eff6;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .container {
-  border: 1px solid red;
   width: var(--mobile);
   padding: 30px;
 }
 .card {
-  border: 1px solid green;
   width: 310px;
-  height: 725px;
+  height: 723px; //altura
+  padding: 30px 0;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  &-top {
+    border: 1px solid green;
+    padding: 0 30px;
+    height: 235px;
+    &-title {
+      border: 1px solid blue;
+      font-weight: 700;
+      margin-bottom: 25px;
+      color: var(--cyan);
+      font-size: 1.9rem;
+    }
+    &-subtitle {
+      margin-bottom: 20px;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--bright-yellow);
+    }
+    &-text {
+      font-size: 1.3rem;
+      color: var(--grayish-blue);
+      line-height: 2.4rem;
+    }
+  }
+  &-mid {
+    height: 200px;
+    padding: 30px;
+    color: #fff;
+    border: 1px solid green;
+    background-color: var(--cyan);
+  }
+  &-bottom {
+    border: 1px solid green;
+    height: 200px;
+    padding: 30px;
+    color: #fff;
+    background-color: #5cbebd;
+  }
 }
