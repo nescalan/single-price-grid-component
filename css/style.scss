@@ -36,34 +36,29 @@ body {
   padding: 30px;
 }
 .card {
-  width: 310px;
-  height: 723px; //altura
-  padding: 30px 0;
+  width: 280px;
   border-radius: 10px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   background-color: #fff;
   &-top {
-    border: 1px solid green;
-    padding: 0 30px;
-    height: 235px;
+    padding: 30px 25px;
+    height: 240px;
     &-title {
-      border: 1px solid blue;
+      margin-bottom: 20px;
       font-weight: 700;
-      margin-bottom: 25px;
+      font-size: 1.7rem;
       color: var(--cyan);
-      font-size: 1.9rem;
     }
     &-subtitle {
       margin-bottom: 20px;
-      font-size: 1.5rem;
+      font-size: 1.3rem;
       font-weight: 700;
-      // color: var(--bright-yellow);
-      color: #c3d85a;
+      color: var(--bright-yellow);
     }
     &-text {
-      font-size: 1.3rem;
+      font-size: 1.15rem;
       color: var(--grayish-blue);
-      line-height: 2.4rem;
+      line-height: 2rem;
     }
   }
   &-mid {
