@@ -133,7 +133,6 @@ body {
 }
 
 .card-bottom {
-  border: 1px solid green;
   height: 200px;
   padding: 20px 30px;
   color: var(--white);
