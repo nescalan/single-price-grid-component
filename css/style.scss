@@ -1,6 +1,7 @@
 :root {
   // Layout
   --mobile: 375px;
+  --tablet: 750px;
   --desktop: 1440px;
 
   // Colors
@@ -24,7 +25,7 @@ html {
   font-size: 62.5%;
 }
 body {
-  height: 100 vh;
+  height: 100vh;
   font-size: var(--main-font-size);
   font-family: var(--karla);
   background-color: #e6eff6;
@@ -35,99 +36,143 @@ body {
 .container {
   width: var(--mobile);
   padding: 30px;
-}
-.card {
-  width: 280px;
-  border-radius: 10px;
-  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-  background-color: var(--white);
-  &-top {
-    padding: 30px 25px;
-    height: 240px;
-    &-title {
-      margin-bottom: 20px;
-      font-weight: 700;
-      font-size: 1.7rem;
-      color: var(--cyan);
-    }
-    &-subtitle {
-      margin-bottom: 20px;
-      font-size: 1.3rem;
-      font-weight: 700;
-      color: var(--bright-yellow);
-    }
-    &-text {
-      font-size: 1.15rem;
-      color: var(--grayish-blue);
-      line-height: 2rem;
-    }
-  }
-  &-mid {
-    height: 210px;
-    padding: 25px 30px;
-    color: var(--white);
-    background-color: var(--cyan);
-    &-title {
-      font-weight: 700;
-      margin-bottom: 20px;
-    }
-    &-subtitle {
-      color: #6ed5d3;
-      font-size: 1.4rem;
-      display: flex;
-      align-items: center;
-      flex-direction: row;
-      & .span-1 {
-        color: var(--white);
-        font-size: 2.7rem;
+  .card {
+    &-top {
+      height: 240px;
+      padding: 30px 25px;
+      border-radius: 10px 10px 0 0;
+      background-color: var(--white);
+      &-title {
+        margin-bottom: 20px;
         font-weight: 700;
-        margin-right: 13px;
-        display: inline-block;
+        font-size: 1.7rem;
+        color: var(--cyan);
       }
-      & .span-2 {
-        color: #82e6e6;
+      &-subtitle {
+        margin-bottom: 20px;
+        font-size: 1.3rem;
+        font-weight: 700;
+        color: var(--bright-yellow);
+      }
+      &-text {
+        font-size: 1.15rem;
+        color: var(--grayish-blue);
+        line-height: 2rem;
       }
     }
-    &-text {
-      margin-top: 8px;
-      font-size: 1.4rem;
-    }
-    & button {
-      width: 100%;
-      height: 43px;
-      margin-top: 23px;
-      font-weight: 700;
+    &-mid {
+      height: 210px;
+      padding: 25px 30px;
       color: var(--white);
-      border: none;
-      border-radius: 5px;
-      box-shadow: rgba(50, 50, 60, 0.4) 0px 7px 29px 0px;
-      background-color: var(--bright-yellow);
+      background-color: var(--cyan);
+      &-title {
+        font-weight: 700;
+        margin-bottom: 20px;
+      }
+      &-subtitle {
+        color: #6ed5d3;
+        font-size: 1.4rem;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        & .span-1 {
+          color: var(--white);
+          font-size: 2.7rem;
+          font-weight: 700;
+          margin-right: 13px;
+          display: inline-block;
+        }
+        & .span-2 {
+          color: #82e6e6;
+        }
+      }
+      &-text {
+        margin-top: 8px;
+        font-size: 1.4rem;
+      }
+      & button {
+        width: 100%;
+        height: 43px;
+        margin-top: 23px;
+        font-weight: 700;
+        color: var(--white);
+        border: none;
+        border-radius: 5px;
+        box-shadow: rgba(50, 50, 60, 0.4) 0px 7px 29px 0px;
+        background-color: var(--bright-yellow);
+      }
+    }
+    &-bottom {
+      height: 210px;
+      padding: 20px 30px;
+      color: var(--white);
+      background-color: #5cbebd;
+      // border-radius: 10px 10px 0 0;
+      border-radius: 0 0 10px 10px;
+      &-title {
+        font-weight: 700;
+      }
+      &-text {
+        width: 80%;
+        margin-top: 15px;
+        font-size: 1.2rem;
+        line-height: 1.8rem;
+        color: #bfe6e6;
+      }
     }
   }
-  &-bottom {
-    height: 200px;
-    padding: 20px 30px;
-    color: var(--white);
-    background-color: #5cbebd;
-    border-bottom-left-radius: 10px;
-    border-bottom-right-radius: 10px;
-    &-title {
-      font-weight: 700;
-    }
-    &-text {
-      width: 80%;
-      margin-top: 15px;
-      font-size: 1.2rem;
-      line-height: 1.8rem;
-      color: #bfe6e6;
-    }
-  }
-  .attribution {
-    width: 100%;
+  & .attribution {
+    margin-top: 15px;
     font-size: 1rem;
     text-align: center;
+    & a {
+      color: hsl(228, 45%, 44%);
+    }
   }
-  .attribution a {
-    color: hsl(228, 45%, 44%);
+}
+
+// =====================================
+//              TABLET
+// =====================================
+
+// @media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
+  .container {
+    width: var(--tablet);
+    padding: 30px;
+    & .card {
+      &-top {
+        &-title {
+          font-size: 2rem;
+        }
+        &-subtitle {
+          font-size: 1.5rem;
+        }
+        &-text {
+          width: 70%;
+          font-size: 1.35rem;
+        }
+      }
+      &-mid,
+      &-bottom {
+        width: 50%;
+        height: 225px;
+        float: left;
+      }
+      &-mid {
+        border-radius: 0 0 0 10px;
+      }
+      &-bottom {
+        border-radius: 0 0 10px 0;
+      }
+    }
+    & .attribution {
+      margin-top: 30px;
+      font-size: 1.5rem;
+      text-align: center;
+      & a {
+        color: hsl(228, 45%, 44%);
+      }
+    }
   }
 }
