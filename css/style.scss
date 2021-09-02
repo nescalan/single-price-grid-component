@@ -35,6 +35,7 @@ body {
 }
 .container {
   width: var(--mobile);
+  min-width: 310px;
   padding: 30px;
   .card {
     &-top {
