@@ -136,8 +136,7 @@ body {
 //              TABLET
 // =====================================
 
-// @media only screen and (min-width: 768px) {
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .container {
     width: var(--tablet);
     padding: 30px;
@@ -162,6 +161,9 @@ body {
       }
       &-mid {
         border-radius: 0 0 0 10px;
+        & button {
+          width: 75%;
+        }
       }
       &-bottom {
         border-radius: 0 0 10px 0;
